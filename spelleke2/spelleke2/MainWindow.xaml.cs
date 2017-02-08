@@ -21,68 +21,65 @@ namespace spelleke2
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Baan baan;
+        int stap = 40;
+        
+        // Banen
+        private Baan Banen;
+        // Veld
+        private Grasveld Veld;
+        // Huisjes
+        private Huisje Huisjes;
+        // Hekjes
+        private Hekje Hekjes;
+        // Speler
         private Speler speler;
-
         public MainWindow()
         {
             InitializeComponent();
-            baan = new Baan();
-            baan.DisplayOn(canvas);
+            // Veld
+            Veld = new Grasveld();
+            Veld.DisplayOn(StartCanvas);
+            // Banen
+            Banen = new Baan();
+            Banen.DisplayOn(StartCanvas);
+            // Huisjes
+            Huisjes = new Huisje();
+            Huisjes.DisplayOn(StartCanvas);
+            // Hekjes
+            Hekjes = new Hekje();
+            Hekjes.DisplayOn(StartCanvas);
+            // Speler
             speler = new Speler();
-            speler.DisplayOn(canvas);
-            //canvas.Children.Add(elly);
+            speler.DisplayOn(StartCanvas);
 
         }
 
         private void MoveUpButton_Click(object sender, RoutedEventArgs e)
         {
-            baan.MoveDown(5);
-            //y = y - 10;
-            //elly.Margin = new Thickness(x, y, 0, 0);
+            Banen.MoveDown(stap);
+            Huisjes.MoveDown(stap);
+            Hekjes.MoveDown(stap);
         }
-
+            
         private void MoveDownButton_Click(object sender, RoutedEventArgs e)
         {
-            baan.MoveUp(5);
-            //y = y + 10;
-            //elly.Margin = new Thickness(x, y, 0, 0);
+            Banen.MoveUp(stap);
+            Huisjes.MoveUp(stap);
+            Hekjes.MoveUp(stap);
         }
 
         private void MoveLeftButton_Click(object sender, RoutedEventArgs e)
         {
-            baan.MoveRight(5);
-            //x = x - 10;
-            //elly.Margin = new Thickness(x, y, 0, 0);
+            Banen.MoveRight(stap);
+            Huisjes.MoveRight(stap);
+            Hekjes.MoveRight(stap);
         }
 
         private void MoveRightButton_Click(object sender, RoutedEventArgs e)
         {
-            baan.MoveLeft(5);
-            //x = x + 10;
-            //elly.Margin = new Thickness(x, y, 0, 0);
-        }
-
-        private void GrowButton_Click(object sender, RoutedEventArgs e)
-        {
-            baan.Grow(1.25);
-            speler.Grow(1.25);
-            //if (elly.Height < 40)
-            //{
-            //    elly.Height = elly.Height + 10;
-            //    elly.Width = elly.Width + 10;
-            //} else { }
-        }
-
-        private void ShrinkButton_Click(object sender, RoutedEventArgs e)
-        {
-            baan.Shrink(1.25);
-            //if (elly.Height > 20)
-            //{
-            //    elly.Height = elly.Height - 10;
-            //    elly.Width = elly.Width - 10;
-            //}
-            //else { }
+            Banen.MoveLeft(stap);
+            Huisjes.MoveLeft(stap);
+            Hekjes.MoveLeft(stap);
         }
     }
 }

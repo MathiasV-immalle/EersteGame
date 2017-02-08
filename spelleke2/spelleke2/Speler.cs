@@ -13,25 +13,13 @@ namespace spelleke2
     public class Speler
     {
         private Ellipse elly;
-        private int x = 100;
-        private int y = 100;
-        private double diameter = 20;
+        private int x = 250;
+        private int y = 149;
+        private int diameter = 20;
 
         public Speler()
         {
             CreateSpeler();
-            UpdateSpeler();
-        }
-
-        public void Grow(double change)
-        {
-            diameter = diameter * change;
-            UpdateSpeler();
-        }
-
-        private void Shrink(double change)
-        {
-            diameter = diameter / change;
             UpdateSpeler();
         }
 
