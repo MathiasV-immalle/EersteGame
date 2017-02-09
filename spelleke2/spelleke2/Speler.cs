@@ -13,8 +13,8 @@ namespace spelleke2
     public class Speler
     {
         private Ellipse elly;
-        private int x = 250;
-        private int y = 149;
+        public int xSpeler = 250;
+        public int ySpeler = 149;
         private int diameter = 20;
 
         public Speler()
@@ -38,7 +38,7 @@ namespace spelleke2
 
         private void UpdateSpeler()
         {
-            elly.Margin = new Thickness(x, y, 0, 0);
+            elly.Margin = new Thickness(xSpeler, ySpeler, 0, 0);
             elly.Width = diameter;
             elly.Height = diameter;
         }

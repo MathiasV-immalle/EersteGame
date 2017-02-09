@@ -8,7 +8,7 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Canvas x:Name="StartCanvas" HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="517"/>
-        <Button x:Name="MoveUpButton" Content="UP" Canvas.Left="432" Canvas.Top="289" Width="75" Margin="392,234,0,0" Click="MoveUpButton_Click" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top"/>
+        <Button x:Name="MoveUpButton" Content="UP" Canvas.Left="432" Canvas.Top="289" Width="75" Margin="392,234,0,0" Click="MoveUpButton_Click" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" KeyUp="MoveUpButton_Click"/>
         <Button x:Name="MoveDownButton" Content="DOWN" Width="75" Margin="392,286,0,0" Click="MoveDownButton_Click" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top"/>
         <Button x:Name="MoveRightButton" Content="RIGHT" Width="75" Margin="432,260,0,0" Click="MoveRightButton_Click" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top"/>
         <Button x:Name="MoveLeftButton" Content="LEFT" Width="75" Margin="352,260,0,0" Click="MoveLeftButton_Click" Height="21" VerticalAlignment="Top" HorizontalAlignment="Left"/>

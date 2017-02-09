@@ -28,8 +28,8 @@ namespace spelleke2
         private int yHuis001 = 55;
         private int xDak001 = 212;
         private int yDak001 = 54;
-        private int xDeur001 = 286;
-        private int yDeur001 = 96;
+        public int xDeur001 = 286;
+        public int yDeur001 = 96;
         private int xRaam001 = 225;
         private int yRaam001 = 96;
         //private int xHuis002 = 320;

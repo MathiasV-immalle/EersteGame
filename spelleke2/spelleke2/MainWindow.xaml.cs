@@ -51,7 +51,6 @@ namespace spelleke2
             // Speler
             speler = new Speler();
             speler.DisplayOn(StartCanvas);
-
         }
 
         private void MoveUpButton_Click(object sender, RoutedEventArgs e)
