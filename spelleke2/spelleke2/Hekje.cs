@@ -122,6 +122,17 @@ namespace spelleke2
             //canvas.Children.Add(Huis002);
         }
 
+        public void RemoveFrom(Canvas canvas)
+        {
+            canvas.Children.Remove(Hekje00101);
+            canvas.Children.Remove(Hekje00102);
+            canvas.Children.Remove(Hekje001022);
+            canvas.Children.Remove(Hekje00103);
+            canvas.Children.Remove(Hekje00104);
+            canvas.Children.Remove(Hekje00105);
+            //canvas.Children.Remove(Huis002);
+        }
+
         public void CreateHuis()
         {
             // Huis001

@@ -22,12 +22,12 @@ namespace spelleke2
         private Rectangle Baan002;
         private Rectangle Baan001002Cross;
         // X & Y
-        private int xBaan001 = 0;
-        private int yBaan001 = 139;
-        private int xBaan002 = 320;
-        private int yBaan002 = 0;
-        private int xBaan001002Cross = 310;
-        private int yBaan001002Cross = 141;
+        public int xBaan001 = 0;
+        public int yBaan001 = 139;
+        public int xBaan002 = 320;
+        public int yBaan002 = 0;
+        public int xBaan001002Cross = 310;
+        public int yBaan001002Cross = 141;
 
         // Hoogte & Breedte
         private int Baan001Hoogte = 40;
@@ -80,6 +80,13 @@ namespace spelleke2
             canvas.Children.Add(Baan001);
             canvas.Children.Add(Baan002);
             canvas.Children.Add(Baan001002Cross);
+        }
+
+        public void RemoveFrom(Canvas canvas)
+        {
+            canvas.Children.Remove(Baan001);
+            canvas.Children.Remove(Baan002);
+            canvas.Children.Remove(Baan001002Cross);
         }
 
         public void CreateBaan()

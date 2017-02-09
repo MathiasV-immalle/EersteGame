@@ -24,14 +24,14 @@ namespace spelleke2
         private Rectangle Raam001;
         //private Rectangle Huis002;
         // X & Y
-        private int xHuis001 = 215;
-        private int yHuis001 = 55;
-        private int xDak001 = 212;
-        private int yDak001 = 54;
+        public int xHuis001 = 215;
+        public int yHuis001 = 55;
+        public int xDak001 = 212;
+        public int yDak001 = 54;
         public int xDeur001 = 286;
         public int yDeur001 = 96;
-        private int xRaam001 = 225;
-        private int yRaam001 = 96;
+        public int xRaam001 = 225;
+        public int yRaam001 = 96;
         //private int xHuis002 = 320;
         //private int yHuis002 = 0;
 
@@ -100,6 +100,15 @@ namespace spelleke2
             canvas.Children.Add(Deur001);
             canvas.Children.Add(Raam001);
             //canvas.Children.Add(Huis002);
+        }
+
+        public void RemoveFrom(Canvas canvas)
+        {
+            canvas.Children.Remove(Huis001);
+            canvas.Children.Remove(Dak001);
+            canvas.Children.Remove(Deur001);
+            canvas.Children.Remove(Raam001);
+            //canvas.Children.Remove(Huis002);
         }
 
         public void CreateHuis()

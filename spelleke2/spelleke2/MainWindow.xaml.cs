@@ -51,6 +51,13 @@ namespace spelleke2
             // Speler
             speler = new Speler();
             speler.DisplayOn(StartCanvas);
+            //if (speler.xSpeler > Huisjes.xDeur001 && speler.xSpeler < Banen.xBaan002 &&
+            //    speler.ySpeler > Huisjes.yDeur001 && speler.ySpeler < Banen.yBaan001)
+            //{
+                //Banen.RemoveFrom(StartCanvas);
+                //Huisjes.RemoveFrom(StartCanvas);
+                //Hekjes.RemoveFrom(StartCanvas);
+            //}
         }
 
         private void MoveUpButton_Click(object sender, RoutedEventArgs e)
