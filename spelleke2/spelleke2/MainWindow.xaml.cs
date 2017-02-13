@@ -51,6 +51,9 @@ namespace spelleke2
             // Speler
             speler = new Speler();
             speler.DisplayOn(StartCanvas);
+
+            Huis h = new Huis();
+            h.Show();
             //if (speler.xSpeler > Huisjes.xDeur001 && speler.xSpeler < Banen.xBaan002 &&
             //    speler.ySpeler > Huisjes.yDeur001 && speler.ySpeler < Banen.yBaan001)
             //{

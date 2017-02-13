@@ -57,8 +57,15 @@
     </ApplicationDefinition>
     <Compile Include="Grasveld.cs" />
     <Compile Include="Hekje.cs" />
+    <Compile Include="Huis.xaml.cs">
+      <DependentUpon>Huis.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Huisje.cs" />
     <Compile Include="Speler.cs" />
+    <Page Include="Huis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
